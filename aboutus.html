@@ -7,18 +7,20 @@
     <title>About Us-Farmers Market</title>
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <div class="about">
-        <div class="p-5 text-center bg-image" style="background-image: url(images/about-us.jpg); height: 350px; ">
+        <div class="p-5 text-center bg-image" style="background-image: url(images/about-us.jpg); height: 350px;">
             <h1>ABOUT US</h1>
             <p>Farmers Market is an online platform where buyers and sellers meet to trade farm produce.</p>
             <p>It’s accessible through the internet and allows farmers to post free ads of their farm produce for potential customers.</p>
             <p>We aim to promote clean-living and clean consumer products, by bridging the gap between the consumers and the farmers.</p>
         </div>
+
     </div>
 
     <br>
@@ -39,51 +41,32 @@
 
     <br>
 
-    <h1>TESTIMONIALS</h1>
+    <h2>TESTIMONIALS</h2>
 
-    <div class="slider">
-        <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav" />
-        <input type="radio" name="slider" title="slide2" class="slider__nav" />
-        <input type="radio" name="slider" title="slide3" class="slider__nav" />
-        <input type="radio" name="slider" title="slide4" class="slider__nav" />
-
-        <div class="slider__inner">
-
-            <div class="slider__contents"><i class="slider__image fa fa-codepen"></i>
-                <h2 class="slider__caption">CUSTOMER 1</h2>
-                <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
-            </div>
-
-            <div class="slider__contents"><i class="slider__image fa fa-newspaper-o"></i>
-                <h2 class="slider__caption">CUSTOMER 2</h2>
-                <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
-            </div>
-
-            <div class="slider__contents"><i class="slider__image fa fa-television"></i>
-                <h2 class="slider__caption">CUSTOMER 3</h2>
-                <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
-            </div>
-
-            <div class="slider__contents"><i class="slider__image fa fa-diamond"></i>
-                <h2 class="slider__caption">CUSTOMER 4</h2>
-                <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
-            </div>
-
+    <div class="container">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-caption">
+                        <p>If Shai Reznik's TDD videos don't convince you to add automated testing your code, I don't know what will.This was the very best explanation of frameworks for brginners that I've ever seen. </p> <img src="https://i.imgur.com/lE89Aey.jpg">
+                        <div id="image-caption">Nick Doe</div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption">
+                        <p>If Shai Reznik's TDD videos don't convince you to add automated testing your code, I don't know what will.This was the very best explanation of frameworks for brginners that I've ever seen.</p> <img src="https://i.imgur.com/QptVdsp.jpg" class="img-fluid">
+                        <div id="image-caption">Cromption Greves</div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption">
+                        <p>If Shai Reznik's TDD videos don't convince you to add automated testing your code, I don't know what will.This was the very best explanation of frameworks for brginners that I've ever seen.</p> <img src="https://i.imgur.com/jQWThIn.jpg" class="img-fluid">
+                        <div id="image-caption">Harry Mon</div>
+                    </div>
+                </div>
+            </div> <a class="carousel-control-prev" href="#demo" data-slide="prev"> <i class='fas fa-arrow-left'></i> </a> <a class="carousel-control-next" href="#demo" data-slide="next"> <i class='fas fa-arrow-right'></i> </a>
         </div>
     </div>
-
-    <h1>MEET OUR FARMERS</h1>
-    <h3>FARMER #1</h3>
-    <p>We offer well-grown, all-natural, organic vegetables.</p>
-
-    <h3>FARMER #2</h3>
-    <p>Fresh cereals and legumes for your necessary dietary needs.</p>
-
-    <h3>FARMER #3</h3>
-    <p>Organic, unprocessed, additive free meat for you and your family.</p>
-
-    <h3>FARMER #4</h3>
-    <p>Freshly grown potatoes, carrots, arrow roots, beets, onions, ginger and many more </p>
 
 </body>
 
