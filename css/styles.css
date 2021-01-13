@@ -3,7 +3,6 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
-  overflow: auto;
 }
 body{
   height: 100vh;
@@ -36,4 +35,18 @@ body{
 
 .btn:hover{
   background-color: #ddd;
+}
+
+.store-item-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.75rem;
+  background: var(--mainYellow);
+  border-top-left-radius: 1rem;
+  transition: all 1s ease-in-out;
+  transform: translate(100%, 100%);
+}
+.container {
+  overflow: auto;
 }
