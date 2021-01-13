@@ -12,21 +12,11 @@
 </head>
 <body>
   <!-- NAV BAR -->
-  <nav>
-
-  </nav>
-
-  <!-- LINKS/FILTER OF FOOD GROUPS:ALL, GREENS, CEREALS, MEATS, TUBERS-->
-  <div class="container">
-    <div class="row">
-      <div id="buttons" class="col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
-          <button type="button" name="button" class="btn" onclick="filterProducts('all')">All</button>
-          <button type="button" name="button" class="btn" onclick="filterProducts('greens')">Fruits & Vegetables</button>
-          <button type="button" name="button" class="btn" onclick="filterProducts('proteins')">Meat & Poultry</button>
-          <button type="button" name="button" class="btn" onclick="filterProducts('grains')">Legumes & Cereals</button>
-          <button type="button" name="button" class="btn" onclick="filterProducts('roots')">Roots & Tubers</button>
-        </div>
-    </div>
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
   </div>
 
   <!-- SEARCH BAR: -->
@@ -34,6 +24,20 @@
    <div class="search">
      <input type="text" name="searchbar" value="searchbar" onkeyup="" placeholder="Search...">
    </div>
+
+   <!-- LINKS/FILTER OF FOOD GROUPS:ALL, GREENS, CEREALS, MEATS, TUBERS-->
+   <div class="container">
+     <div class="row">
+       <div id="buttons" class="btn-group">
+           <button type="button" name="button" class="btn btn-info" onclick="filterProducts('all')">All</button>
+           <button type="button" name="button" class="btn btn-info" onclick="filterProducts('greens')">Fruits & Vegetables</button>
+           <button type="button" name="button" class="btn btn-info" onclick="filterProducts('proteins')">Meat & Poultry</button>
+           <button type="button" name="button" class="btn btn-info" onclick="filterProducts('grains')">Legumes & Cereals</button>
+           <button type="button" name="button" class="btn btn-info" onclick="filterProducts('roots')">Roots & Tubers</button>
+         </div>
+     </div>
+   </div>
+
     <!-- FOOD ITEMS/STORE -->
     <div class="container">
       <div class="row items">
@@ -43,7 +47,7 @@
           <div class="card">
             <div class="img-container">
               <img src="images/potato.jpeg"class="card-img-top store-img" alt="Potatoes">
-              <span class="store-item-icon">
+              <span class="store-item-icon" onclick="function(addCart)">
                 <i class="fa fa-shopping-cart"></i>
               </span>
             </div>
@@ -403,7 +407,7 @@
           <div class="card">
             <div class="img-container">
               <img src="images/potato.jpeg"class="card-img-top store-img" alt="Mangoes">
-              <span class="store-item-icon">
+              <span class="store-item-icon" onblur="">
                 <i class="fas fa-shopping-cart"></i>
               </span>
             </div>
