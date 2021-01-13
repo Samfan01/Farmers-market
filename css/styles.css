@@ -11,3 +11,9 @@ body{
     background: transparent;
     
 }
+.nav{
+    position: fixed;
+}
+.input{
+    padding-left: 870px;
+}
