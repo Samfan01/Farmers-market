@@ -1,0 +1,13 @@
+body{
+    background-image: url(../images/contactb-g.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    color: white;
+    border: 10px;
+}
+.form-control{
+    background: transparent;
+    
+}
