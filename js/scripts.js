@@ -2,16 +2,11 @@
 // Append
 $(document).ready(function(){
   var itemPrice = $("#price").val();
-  var itemName = $("#item-name").val();
   $(".store-item-icon").click(function(){
-    $("ul#list").append("<li><span> "+itemName+""+itemPrice+" </span></li>");
+    $("ul#list").append("<li><span> "+itemPrice+"</span></li>");
     alert("Item added to cart");
   })
 });
-
-
-// Object Constructor
-var 
 
 
 
