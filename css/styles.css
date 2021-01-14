@@ -87,3 +87,16 @@ i {
     transition: none;
     opacity: unset
 }
+
+.nav{
+    position: fixed;
+    border: 5px solid black;
+}
+
+footer {
+    background-color:rgba(52, 58, 57, 0.329);
+    color: black;
+    text-align: center;
+    height: 200px;
+    font-weight: bolder;
+}
