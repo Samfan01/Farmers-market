@@ -9,6 +9,12 @@ $(document).ready(function(){
   })
 });
 
+
+// Object Constructor
+var 
+
+
+
 // SHOP.HTML FUNCTION TO FILTER PRODUCTS
 filterProducts("all");
 
