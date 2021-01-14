@@ -1,14 +1,4 @@
-
-// function Product(name,price) {
-//   this.name=name;
-//   this.price=price;
-//
-// }
-// Product.prototype.productName=function(){
-//   Product.name==100;
-//   return "100";
-// }
-
+// SHOPPING CART FUNCTIONALITY
 // Append
 $(document).ready(function(){
   var itemPrice = $("#price").val();
@@ -20,19 +10,19 @@ $(document).ready(function(){
 });
 
 // SHOP.HTML FUNCTION TO FILTER PRODUCTS
-
 filterProducts("all");
 
 function filterProducts(c) {
   var x,i;
   x = document.getElementsByClassName("box");
   if (c == "all") c = "";
+  //add .show to filtered products
   for (i = 0; i < x.length; i++){
     removeClass(x[i], "show");
     if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
   }
 }
-
+//Show filtered elements
 function addClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
@@ -43,7 +33,7 @@ function addClass(element, name) {
     }
   }
 }
-
+//hide elements not selected
 function removeClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
@@ -56,26 +46,13 @@ function removeClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-// SHOPPING CART FUNCTIONALITY
-
-
-// <body onload="doShowAll()">
-//
-// function doShowAll() {
-//     if (CheckBrowser()) {
-//         var key = "";
-//         var list = "<tr><th>Item</th><th>Value</th></tr>\n";
-//         var i = 0;
-//         for (i = 0; i <= localStorage.length-1; i++) {
-//             key = localStorage.key(i);
-//             list += "<tr><td>" + key + "</td>\n<td>"
-//                     + localStorage.getItem(key) + "</td></tr>\n";
-//         }
-//         if (list == "<tr><th>Item</th><th>Value</th></tr>\n") {
-//             list += "<tr><td><i>empty</i></td>\n<td><i>empty</i></td></tr>\n";
-//         }
-//         document.getElementById('list').innerHTML = list;
-//     } else {
-//         alert('Cannot save shopping list as your browser does not support HTML 5');
-//     }
-// }
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("buttons");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
