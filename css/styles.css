@@ -271,8 +271,7 @@ i {
 
 .nav{
     position: fixed;
-    border: 5px solid black;
-}
+ }
 
 footer {
     background-color:rgba(52, 58, 57, 0.329);
@@ -302,7 +301,7 @@ footer {
     font-weight: bolder;
 }
 .input{
-    padding-left: 670px;
+    padding-left: 620px;
 }
 .mmmm{
     margin-left: 50px;
