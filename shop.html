@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Shop</title>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body>
+  <!-- NAV BAR -->
+  <nav class="navbar navbar-expand-sm bg-light sticky-top">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="shop.html">Shopping</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact us</a>
+      </li>
+    </ul>
+    <div class="input">
+      <form class="form-inline" action="/action_page.php">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-success" type="submit">Search</button>
+        <img src="./images/cart.png" alt="cart" height="40" width="40">
+      </form>
+    </div>
+  </nav>
+
+
+<!-- OUR SHOP -->
+<div class="col-10 mx-auto col-sm-6 text-center">
+  <h1 class="text-capitalize">our <strong class="banner-title ">store</strong></h1>
+</div>
+
+   <!-- LINKS/FILTER OF FOOD GROUPS:ALL, GREENS, CEREALS, MEATS, TUBERS-->
+   <div class="container">
+     <div class="row  justify-content-center">
+       <div id="buttons" class="btn-group">
+           <button type="button" name="button" class="btn btn-success" onclick="filterProducts('all')">All</button>
+           <button type="button" name="button" class="btn btn-success" onclick="filterProducts('greens')">Fruits & Vegetables</button>
+           <button type="button" name="button" class="btn btn-success" onclick="filterProducts('proteins')">Meat & Poultry</button>
+           <button type="button" name="button" class="btn btn-success" onclick="filterProducts('grains')">Legumes & Cereals</button>
+           <button type="button" name="button" class="btn btn-success" onclick="filterProducts('roots')">Roots & Tubers</button>
+         </div>
+     </div>
+   </div>
+
+    <!-- FOOD ITEMS/STORE -->
+    <div class="container">
+      <div class="row items">
+
+        <!-- potatoes -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto box roots">
+          <div class="card">
+            <div class="img-container">
+              <img src="images/potatoes.jpeg"class="card-img-top store-img" alt="Potatoes">
+              <span class="store-item-icon" onclick="function(addCart)">
+                <i class="fa fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex flex-row justify-content-between text-capitalize">
+                <h5 id="item-name">Potatoes</h5>
+                <h5 class="item-value">Ksh <strong id="item-price">100</strong></h5>
+                <input type="hidden" name="price" value="100" id="price">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tomatoes -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto box greens">
+          <div class="card">
+            <div class="img-container">
+              <img src="images/tomato.jpeg"class="card-img-top store-img" alt="Tomatoes">
+                <span class="store-item-icon">
+                  <i class="fa fa-shopping-cart"></i>
+                </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="item-name">Tomatoes</h5>
+                <h5 class="item-value">Ksh <strong id="item-price">80</strong></h5>
+                <input type="hidden" name="price" value="80" id="price">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Oranges -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto box greens">
+          <div class="card">
+            <div class="img-container">
+              <img src="images/oranges.jpeg"class="card-img-top store-img" alt="Oranges">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="item-name">Oranges</h5>
+                <h5 class="item-value">Ksh <strong id="item-price">120</strong></h5>
+                <input type="hidden" name="price" value="120" id="price">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bananas-->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto box greens">
+          <div class="card">
+            <div class="img-container">
+              <img src="images/banana.jpeg"class="card-img-top store-img" alt="Bananas">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="item-name">Bananas</h5>
+                <h5 class="item-value">Ksh <strong id="item-price">70</strong></h5>
+                <input type="hidden" name="price" value="70" id="price">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mangoes -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto box greens">
+          <div class="card">
+            <div class="img-container">
+              <img src="images/mango.jpeg"class="card-img-top store-img" alt="Mangoes">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="item-name">Mangoes</h5>
+                <h5 class="item-value">Ksh <strong id="item-price">160</strong></h5>
+                <input type="hidden" name="price" value="160" id="price">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kales -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto box greens">
+          <div class="card">
+            <div class="img-container">
+              <img src="images/kale.jpeg"class="card-img-top store-img" alt="Kales">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="item-name">Kales</h5>
+                <h5 class="item-value">Ksh <strong id="item-price">60</strong></h5>
+                <input type="hidden" name="price" value="60" id="price">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cabbage -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto box greens">
+          <div class="card">
+            <div class="img-container">
+              <img src="images/cabbage.jpeg"class="card-img-top store-img" alt="Cabbage">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="item-name">Cabbage</h5>
+                <h5 class="item-value">Ksh <strong id="item-price">100</strong></h5>
+                <input type="hidden" name="price" value="100" id="price">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Managu -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto box greens">
+          <div class="card">
+            <div class="img-container">
+              <img src="images/managu.jpeg"class="card-img-top store-img" alt="Mangoes">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="item-name">Managu</h5>
+                <h5 class="item-value">Ksh <strong id="item-price">130</strong></h5>
+                <input type="hidden" name="" value="130" id="price">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Capsicum -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto box greens">
+          <div class="card">
+            <div class="img-container">
+              <img src="images/capsicum.jpeg"class="card-img-top store-img" alt="Mangoes">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="item-name">Capsicum</h5>
+                <h5 class="item-value">Ksh <strong id="item-price">340</strong></h5>
+                <input type="hidden" name="price" value="340" id="price">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rabbit Meat -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto box proteins">
+          <div class="card">
+            <div class="img-container">
+              <img src="images/rabbit.jpeg"class="card-img-top store-img" alt="Rabbit">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="item-name">Rabbit</h5>
+                <h5 class="item-value">Ksh <strong id="item-price">350</strong></h5>
+                <input type="hidden" name="price" value="350" id="price">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chicken -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto box proteins">
+          <div class="card">
+            <div class="img-container">
+              <img src="images/chicken.jpeg"class="card-img-top store-img" alt="Mangoes">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="item-name">Chicken</h5>
+                <h5 class="item-value">Ksh <strong id="item-price">550</strong></h5>
+                <input type="hidden" name="price" value="550" id="price">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Eggs -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto box proteins">
+          <div class="card">
+            <div class="img-container">
+              <img src="images/eggs.jpeg"class="card-img-top store-img" alt="Eggs">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="item-name">1 Tray Kienyeji Eggs</h5>
+                <h5 class="item-value">Ksh <strong id="item-price">330</strong></h5>
+                <input type="hidden" name="price" value="330" id="price">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Beef -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto box proteins">
+          <div class="card">
+            <div class="img-container">
+              <img src="images/beef.jpeg"class="card-img-top store-img" alt="Beef">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="item-name">Beef 1kg</h5>
+                <h5 class="item-value">Ksh <strong id="item-price">140</strong></h5>
+                <input type="hidden" name="price" value="140" id="price">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Liver -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto box proteins">
+          <div class="card">
+            <div class="img-container">
+              <img src="images/liver.jpeg"class="card-img-top store-img" alt="Liver">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="item-name">Liver 1kg</h5>
+                <h5 class="item-value">Ksh <strong id="item-price">170</strong></h5>
+                <input type="hidden" name="price" value="170" id="price">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Beans -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto box grains">
+          <div class="card">
+            <div class="img-container">
+              <img src="images/beans.jpeg"class="card-img-top store-img" alt="Beans">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="item-name">Beans 1kg</h5>
+                <h5 class="item-value">Ksh <strong id="item-price">155</strong></h5>
+                <input type="hidden" name="price" value="155" id="price">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Green Grams -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto box grains">
+          <div class="card">
+            <div class="img-container">
+              <img src="images/greengrams.jpeg"class="card-img-top store-img" alt="Green Grams">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="item-name">Green Grams 1kg</h5>
+                <h5 class="item-value">Ksh <strong id="item-price">165</strong></h5>
+                <input type="hidden" name="price" value="165" id="price">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Maize -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto box grains">
+          <div class="card">
+            <div class="img-container">
+              <img src="images/maize.jpeg"class="card-img-top store-img" alt="Maize">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="item-name">Maize 1kg</h5>
+                <h5 class="item-value">Ksh <strong id="item-price">90</strong></h5>
+                <input type="hidden" name="price" value="90" id="price">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rice -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto box grains">
+          <div class="card">
+            <div class="img-container">
+              <img src="images/rice.jpeg"class="card-img-top store-img" alt="Mangoes">
+              <span class="store-item-icon" onblur="">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="item-name">Rice 1kg</h5>
+                <h5 class="item-value">Ksh <strong id="item-price">160</strong></h5>
+                <input type="hidden" name="price" value="160" id="price">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Sweet Potatoes-->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto box roots">
+          <div class="card">
+            <div class="img-container">
+              <img src="images/sweet.jpeg"class="card-img-top store-img" alt="Mangoes">
+              <span class="store-item-icon" onblur="">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="item-name" value="Sweet Potato">Sweet Potato 1kg</h5>
+                <h5 class="item-value">Ksh <strong id="item-price">160</strong></h5>
+                <input type="hidden" name="price" value="160" id="price">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Arrow Root-->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto box roots">
+          <div class="card">
+            <div class="img-container">
+              <img src="images/arrowroot.jpeg"class="card-img-top store-img" alt="Mangoes">
+              <span class="store-item-icon" onblur="">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="item-name" value="ArrowRoot">ArrowRoot 1kg</h5>
+                <h5 class="item-value">Ksh <strong id="item-price">190</strong></h5>
+                <input type="hidden" name="price" value="190" id="price">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+ </section>
+
+<!-- Shopping Cart 2-->
+<!-- <form name="ShoppingList">
+    <fieldset>
+        <legend>Shopping cart</legend>
+        <label>Item: <input type="text" name="name"></label>
+        <label>Quantity: <input type="text" name="data"></label>
+
+        <input type="button" value="Save"   onclick="SaveItem()">
+        <input type="button" value="Update" onclick="ModifyItem()">
+        <input type="button" value="Delete" onclick="RemoveItem()">
+    </fieldset>
+    <div id="items_table">
+        <h2>Shopping List</h2>
+        <table id="list"></table>
+        <label><input type="button" value="Clear" onclick="ClearAll()">
+        * Delete all items</label>
+    </div>
+</form>
+ -->
+
+
+</body>
+</html>
