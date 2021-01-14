@@ -1,3 +1,4 @@
+
 /* SHOP.HTML STYLING */
 *{
   margin:0;
@@ -70,3 +71,167 @@ body{
 .item-value {
   color: --mainYellow;
 }
+
+ft-AboutUs
+body {
+    text-align: center;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.911);
+}
+
+.about {
+    color: white;
+}
+
+.carousel-caption {
+    background-color: rgba(168, 204, 164, 0.863);
+    position: initial;
+    z-index: 10;
+    padding: 5rem 8rem;
+    color: black;
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 2rem
+}
+
+@media(max-width:767px) {
+    .carousel-caption {
+        position: initial;
+        z-index: 10;
+        padding: 3rem 2rem;
+        color: black;
+        text-align: center;
+        font-size: 0.7rem;
+        font-style: italic;
+        font-weight: bold;
+        line-height: 1.5rem
+    }
+}
+
+.carousel-caption img {
+    width: 6rem;
+    border-radius: 5rem;
+    margin-top: 2rem
+}
+
+@media(max-width:767px) {
+    .carousel-caption img {
+        width: 4rem;
+        border-radius: 4rem;
+        margin-top: 1rem
+    }
+}
+
+#image-caption {
+    font-style: normal;
+    font-size: 1rem;
+    margin-top: 0.5rem
+}
+
+@media(max-width:767px) {
+    #image-caption {
+        font-style: normal;
+        font-size: 0.6rem;
+        margin-top: 0.5rem
+    }
+}
+
+i {
+    background-color: rgba(160, 206, 156, 0.863);
+    padding: 1.4rem
+}
+
+@media(max-width:767px) {
+    i {
+        padding: 0.8rem
+    }
+}
+
+.carousel-control-prev {
+    justify-content: flex-start
+}
+
+.carousel-control-next {
+    justify-content: flex-end
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    transition: none;
+    opacity: unset
+}
+
+.nav{
+    position: fixed;
+    border: 5px solid black;
+}
+
+footer {
+    background-color:rgba(52, 58, 57, 0.329);
+    color: black;
+    text-align: center;
+    height: 200px;
+    font-weight: bolder;
+
+.col{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/contactb-g.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    color: white;
+}
+.form-control{
+    background: transparent;
+    
+}
+footer {
+    background-color:rgba(52, 58, 57, 0.329);
+    color: black;
+    text-align: center;
+    height: 200px;
+    font-weight: bolder;
+}
+.input{
+    padding-left: 870px;
+}
+.mmmm{
+    margin-left: 50px;
+}
+.images{
+    align-items: center;
+}
+.page{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/bg-3.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: lavenderblush;
+}
+.jumbotron{
+    font-weight: 5000;
+    font-size: 1800;
+    text-align: center;
+    background-color:#96bb7c ;
+    color: black;
+
+}
+.nnn{
+    margin-right: 50px; 
+}
+.form-control{
+    width:100% ;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    float: right;
+    margin-top: 5px;
+}
+.nav{
+    border: 5px solid black;
+}
+

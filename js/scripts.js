@@ -1,3 +1,4 @@
+shop-page
 // SHOPPING CART FUNCTIONALITY
 // Append
 $(document).ready(function(){
@@ -8,8 +9,29 @@ $(document).ready(function(){
   })
 });
 
+ft-AboutUs
+const myForm = document.getElementById("myForm");
+const inpFile = document.getElementById("inpFile");
+
+myForm.addEventListener("submit", e => {
+    e.preventDefault();
+
+    const endpoint = "upload.php";
+    const formData = new FormData();
 
 
+$(document).ready(function(){
+    var name = $('#name').Val();
+$('#submit').click(function(){
+      alert(name)
+})
+ master
+
+    console.log(inpFile.files);
+
+    formData.append("inpFile", inpFile.files[0]);
+
+shop-page
 // SHOP.HTML FUNCTION TO FILTER PRODUCTS
 filterProducts("all");
 
@@ -57,3 +79,9 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+    fetch(endpoint, {
+        method: "post",
+        body: formData,
+    }).catch(console.error);
+})
+master
