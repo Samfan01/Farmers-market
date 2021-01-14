@@ -6,10 +6,7 @@
 }
 body{
   background:#f1f1f1;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
+
 }
 .box{
   float: left;
@@ -36,10 +33,6 @@ body{
 .btn:hover{
   background-color: brown;
 }
-
-/* .container {
-  overflow: auto;
-} */
 
 .card {
   width: 18rem;
