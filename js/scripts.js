@@ -1,3 +1,4 @@
+ft-AboutUs
 const myForm = document.getElementById("myForm");
 const inpFile = document.getElementById("inpFile");
 
@@ -6,6 +7,13 @@ myForm.addEventListener("submit", e => {
 
     const endpoint = "upload.php";
     const formData = new FormData();
+
+
+$(document).ready(function(){
+    var name = $('#name').Val();
+$('#submit').click(function(){
+      alert(name)
+})
 
     console.log(inpFile.files);
 
