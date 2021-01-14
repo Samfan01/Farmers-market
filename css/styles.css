@@ -1,9 +1,7 @@
 body {
     text-align: center;
-    background-color: rgba(160, 206, 156, 0.863);
-    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
-    line-height: 1.5;
+    background-color: rgb(224, 214, 214);
 }
 
 .about {
@@ -11,6 +9,7 @@ body {
 }
 
 .carousel-caption {
+    background-color: rgba(168, 204, 164, 0.863);
     position: initial;
     z-index: 10;
     padding: 5rem 8rem;
