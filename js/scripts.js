@@ -1,7 +1,22 @@
+
+// function Product(name,price) {
+//   this.name=name;
+//   this.price=price;
+//
+// }
+// Product.prototype.productName=function(){
+//   Product.name==100;
+//   return "100";
+// }
+
+// Append
 $(document).ready(function(){
-
-
-
+  var itemPrice = $("#price").val();
+  var itemName = $("#item-name").val();
+  $(".store-item-icon").click(function(){
+    $("ul#list").append("<li><span> "+itemName+""+itemPrice+" </span></li>");
+    alert("Item added to cart");
+  })
 });
 
 // SHOP.HTML FUNCTION TO FILTER PRODUCTS
@@ -42,6 +57,7 @@ function removeClass(element, name) {
 }
 
 // SHOPPING CART FUNCTIONALITY
+
 
 // <body onload="doShowAll()">
 //
