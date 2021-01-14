@@ -1,4 +1,4 @@
-
+$(document).ready(function(){
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
@@ -102,13 +102,12 @@ function updateCartTotal() {
 shop-page
 // SHOPPING CART FUNCTIONALITY
 // Append
-$(document).ready(function(){
   var itemPrice = $("#price").val();
   $(".store-item-icon").click(function(){
     $("ul#list").append("<li><span> "+itemPrice+"</span></li>");
     alert("Item added to cart");
   })
-});
+
 
 ft-AboutUs
 const myForm = document.getElementById("myForm");
@@ -122,13 +121,10 @@ myForm.addEventListener("submit", e => {
     const endpoint = "upload.php";
     const formData = new FormData();
 
-
-$(document).ready(function(){
     var name = $('#name').Val();
 $('#submit').click(function(){
       alert(name)
-})
- master
+
 
     console.log(inpFile.files);
 
