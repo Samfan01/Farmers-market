@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farmers Market</title>
+    <title>Our Shop</title>
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -12,23 +12,27 @@
 </head>
 <body>
   <!-- NAV BAR -->
+  <nav class="navbar navbar-expand-sm bg-light sticky-top">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="shop.html">Shopping</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact us</a>
+      </li>
+    </ul>
+    <div class="input">
+      <form class="form-inline" action="/action_page.php">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-success" type="submit">Search</button>
+        <img src="./images/cart.png" alt="cart" height="40" width="40">
+      </form>
+    </div>
+  </nav>
 
-<nav class="navbar navbar-expand-sm bg-light navbar-light justify-content-center">
-  <ul class="navbar-nav">
-    <li class="nav-item active">
-      <a class="nav-link" href="#">Active</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">Disabled</a>
-    </li>
-  </ul>
-</nav>
 
 <!-- OUR SHOP -->
 <div class="col-10 mx-auto col-sm-6 text-center">
@@ -65,10 +69,12 @@
               <div class="card-text d-flex flex-row justify-content-between text-capitalize">
                 <h5 id="item-name">Potatoes</h5>
                 <h5 class="item-value">Ksh <strong id="item-price">100</strong></h5>
+                <input type="hidden" name="price" value="100" id="price">
               </div>
             </div>
           </div>
         </div>
+
         <!-- Tomatoes -->
         <div class="col-10 col-sm-6 col-lg-4 mx-auto box greens">
           <div class="card">
@@ -82,11 +88,11 @@
               <div class="card-text d-flex justify-content-between text-capitalize">
                 <h5 id="item-name">Tomatoes</h5>
                 <h5 class="item-value">Ksh <strong id="item-price">80</strong></h5>
+                <input type="hidden" name="price" value="80" id="price">
               </div>
             </div>
           </div>
         </div>
-
 
         <!-- Oranges -->
         <div class="col-10 col-sm-6 col-lg-4 mx-auto box greens">
@@ -101,6 +107,7 @@
               <div class="card-text d-flex justify-content-between text-capitalize">
                 <h5 id="item-name">Oranges</h5>
                 <h5 class="item-value">Ksh <strong id="item-price">120</strong></h5>
+                <input type="hidden" name="price" value="120" id="price">
               </div>
             </div>
           </div>
@@ -119,6 +126,7 @@
               <div class="card-text d-flex justify-content-between text-capitalize">
                 <h5 id="item-name">Bananas</h5>
                 <h5 class="item-value">Ksh <strong id="item-price">70</strong></h5>
+                <input type="hidden" name="price" value="70" id="price">
               </div>
             </div>
           </div>
@@ -137,6 +145,7 @@
               <div class="card-text d-flex justify-content-between text-capitalize">
                 <h5 id="item-name">Mangoes</h5>
                 <h5 class="item-value">Ksh <strong id="item-price">160</strong></h5>
+                <input type="hidden" name="price" value="160" id="price">
               </div>
             </div>
           </div>
@@ -155,6 +164,7 @@
               <div class="card-text d-flex justify-content-between text-capitalize">
                 <h5 id="item-name">Kales</h5>
                 <h5 class="item-value">Ksh <strong id="item-price">60</strong></h5>
+                <input type="hidden" name="price" value="60" id="price">
               </div>
             </div>
           </div>
@@ -173,46 +183,12 @@
               <div class="card-text d-flex justify-content-between text-capitalize">
                 <h5 id="item-name">Cabbage</h5>
                 <h5 class="item-value">Ksh <strong id="item-price">100</strong></h5>
+                <input type="hidden" name="price" value="100" id="price">
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Spinach -->
-        <div class="col-10 col-sm-6 col-lg-4 mx-auto box greens">
-          <div class="card">
-            <div class="img-container">
-              <img src="images/spinach.jpeg"class="card-img-top store-img" alt="Spinach">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="item-name">Spinach</h5>
-                <h5 class="item-value">Ksh <strong id="item-price">60</strong></h5>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Terere -->
-        <div class="col-10 col-sm-6 col-lg-4 mx-auto box greens">
-          <div class="card">
-            <div class="img-container">
-              <img src="images/terere.jpeg"class="card-img-top store-img" alt="Terere">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="item-name">Terere</h5>
-                <h5 class="item-value">Ksh <strong id="item-price">130</strong></h5>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <!-- Managu -->
         <div class="col-10 col-sm-6 col-lg-4 mx-auto box greens">
@@ -227,6 +203,7 @@
               <div class="card-text d-flex justify-content-between text-capitalize">
                 <h5 id="item-name">Managu</h5>
                 <h5 class="item-value">Ksh <strong id="item-price">130</strong></h5>
+                <input type="hidden" name="" value="130" id="price">
               </div>
             </div>
           </div>
@@ -245,24 +222,7 @@
               <div class="card-text d-flex justify-content-between text-capitalize">
                 <h5 id="item-name">Capsicum</h5>
                 <h5 class="item-value">Ksh <strong id="item-price">340</strong></h5>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Carrots -->
-        <div class="col-10 col-sm-6 col-lg-4 mx-auto box greens">
-          <div class="card">
-            <div class="img-container">
-              <img src="images/carrots.jpeg"class="card-img-top store-img" alt="Mangoes">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="item-name">Carrots</h5>
-                <h5 class="item-value">Ksh <strong id="item-price">160</strong></h5>
+                <input type="hidden" name="price" value="340" id="price">
               </div>
             </div>
           </div>
@@ -280,7 +240,8 @@
             <div class="card-body">
               <div class="card-text d-flex justify-content-between text-capitalize">
                 <h5 id="item-name">Rabbit</h5>
-                <h5 class="item-value">Ksh <strong id="item-price">200</strong></h5>
+                <h5 class="item-value">Ksh <strong id="item-price">350</strong></h5>
+                <input type="hidden" name="price" value="350" id="price">
               </div>
             </div>
           </div>
@@ -298,7 +259,8 @@
             <div class="card-body">
               <div class="card-text d-flex justify-content-between text-capitalize">
                 <h5 id="item-name">Chicken</h5>
-                <h5 class="item-value">Ksh <strong id="item-price">340</strong></h5>
+                <h5 class="item-value">Ksh <strong id="item-price">550</strong></h5>
+                <input type="hidden" name="price" value="550" id="price">
               </div>
             </div>
           </div>
@@ -317,6 +279,7 @@
               <div class="card-text d-flex justify-content-between text-capitalize">
                 <h5 id="item-name">1 Tray Kienyeji Eggs</h5>
                 <h5 class="item-value">Ksh <strong id="item-price">330</strong></h5>
+                <input type="hidden" name="price" value="330" id="price">
               </div>
             </div>
           </div>
@@ -335,6 +298,7 @@
               <div class="card-text d-flex justify-content-between text-capitalize">
                 <h5 id="item-name">Beef 1kg</h5>
                 <h5 class="item-value">Ksh <strong id="item-price">140</strong></h5>
+                <input type="hidden" name="price" value="140" id="price">
               </div>
             </div>
           </div>
@@ -353,6 +317,7 @@
               <div class="card-text d-flex justify-content-between text-capitalize">
                 <h5 id="item-name">Liver 1kg</h5>
                 <h5 class="item-value">Ksh <strong id="item-price">170</strong></h5>
+                <input type="hidden" name="price" value="170" id="price">
               </div>
             </div>
           </div>
@@ -370,7 +335,8 @@
             <div class="card-body">
               <div class="card-text d-flex justify-content-between text-capitalize">
                 <h5 id="item-name">Beans 1kg</h5>
-                <h5 class="item-value">Ksh <strong id="item-price">160</strong></h5>
+                <h5 class="item-value">Ksh <strong id="item-price">155</strong></h5>
+                <input type="hidden" name="price" value="155" id="price">
               </div>
             </div>
           </div>
@@ -388,7 +354,8 @@
             <div class="card-body">
               <div class="card-text d-flex justify-content-between text-capitalize">
                 <h5 id="item-name">Green Grams 1kg</h5>
-                <h5 class="item-value">Ksh <strong id="item-price">160</strong></h5>
+                <h5 class="item-value">Ksh <strong id="item-price">165</strong></h5>
+                <input type="hidden" name="price" value="165" id="price">
               </div>
             </div>
           </div>
@@ -407,6 +374,7 @@
               <div class="card-text d-flex justify-content-between text-capitalize">
                 <h5 id="item-name">Maize 1kg</h5>
                 <h5 class="item-value">Ksh <strong id="item-price">90</strong></h5>
+                <input type="hidden" name="price" value="90" id="price">
               </div>
             </div>
           </div>
@@ -425,6 +393,7 @@
               <div class="card-text d-flex justify-content-between text-capitalize">
                 <h5 id="item-name">Rice 1kg</h5>
                 <h5 class="item-value">Ksh <strong id="item-price">160</strong></h5>
+                <input type="hidden" name="price" value="160" id="price">
               </div>
             </div>
           </div>
@@ -442,8 +411,9 @@
             </div>
             <div class="card-body">
               <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="item-name">Sweet Potato 1kg</h5>
+                <h5 id="item-name" value="Sweet Potato">Sweet Potato 1kg</h5>
                 <h5 class="item-value">Ksh <strong id="item-price">160</strong></h5>
+                <input type="hidden" name="price" value="160" id="price">
               </div>
             </div>
           </div>
@@ -460,8 +430,9 @@
             </div>
             <div class="card-body">
               <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="item-name">ArrowRoot 1kg</h5>
+                <h5 id="item-name" value="ArrowRoot">ArrowRoot 1kg</h5>
                 <h5 class="item-value">Ksh <strong id="item-price">190</strong></h5>
+                <input type="hidden" name="price" value="190" id="price">
               </div>
             </div>
           </div>
@@ -470,6 +441,11 @@
       </div>
     </div>
  </section>
+
+ <ul id="list">
+
+ </ul>
+
 
 <!-- Shopping Cart -->
 
