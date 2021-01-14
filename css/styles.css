@@ -1,0 +1,13 @@
+body{
+    margin-top:20px;
+    color: #1a202c;
+    text-align: left;
+    background-color: #e3e7ec;
+}
+.main-body {
+    padding: 15px;
+}
+.row gutters-sm2{
+    padding-left: 5px;
+    float: left;
+}
