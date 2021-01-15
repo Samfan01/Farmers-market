@@ -1,25 +1,31 @@
 # {Farmers Market}
 ## Authors
 - [DouglasSamphan](https://github.com/Samfan01) 
+- [Dawn Ndemo](https://github.com/DawnDesign7)
+- [Rose Okoth](https://github.com/rose-okoth)
+- [Bernice Twili](https://github.com/Bernicetwili)
+- [Eric Nshimiyimana](https://github.com/EricNshimiyimana)
 
 
-
-
-
-#### {THis is a page that allows consumers to purchase and sell farm products respectively}, {Date of current version}
+#### {THis is a page that allows consumers to purchase and sell farm produce directly from farmers, {Date of current version}
  
 ## Description
-{This is a web Application that allows farm products customers order for delivery.
+{This is a web Application that allows farm products customers to purchase farm produce directly from farmers, and order for delivery.
 
 
 ## Setup/Installation Requirements
-* This webpage is not to be installed.
+1. Git fork
+1. Git clone https://github.com/Samfan01/Farmers-market
+1. git init
 
 ## Known Bugs
 {}
 
 ## Technologies Used
-{The Mark up language used is HTML which is styled by Css and Javascript.}
+1. HTML
+1. CSS 
+1. Bootstrap
+1. Javascript
 
 ## Support and contact details
 
