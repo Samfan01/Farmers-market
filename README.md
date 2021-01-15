@@ -8,7 +8,7 @@
 
  
 ## Description
-{This is a web Application that allows farm products customers to purchase farm produce directly from farmers, and order for delivery.
+This is a web Application that allows farm products customers to purchase farm produce directly from farmers, and order for delivery.
 
 
 ## Setup/Installation Requirements
@@ -31,7 +31,7 @@
 
 ## Support and contact details
 
-{Reach the creaters of the web page for any questions or comments through dsamfan@gmail.com}
+Reach the creaters of the web page for any questions or comments through dsamfan@gmail.com
 
 ## License and Copyright information
 ​
